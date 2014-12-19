@@ -1,0 +1,12 @@
+language: go
+go:
+- '1.4'
+deploy:
+  provider: releases
+  api_key:
+    secure: C6jQEXOynvKhBHxb64DvXrqA4nKiZ5+aSoka1uDDOYDyMS5LEmJcW+MMEZGy/hjPARpdSJmSAPPNKkDvAqEB6VgL52mJHfBFOguiaaXQsAmhwHlHXgV53ml6e+lQE5XaGzxeDPKr6ZZ+D6nSWyAS4v7kAuqAO1MRRJ34gCqSdB4=
+  file: elb-reregister
+  skip_cleanup: true
+  on:
+    repo: davedash/elb-reregister
+    tags: true
