@@ -10,3 +10,4 @@ deploy:
   on:
     repo: davedash/elb-reregister
     tags: true
+    all_branches: true
