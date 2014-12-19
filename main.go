@@ -26,7 +26,7 @@ func usage() {
 }
 
 func main() {
-	auth, err := aws.EnvAuth()
+	auth, err := aws.GetAuth("", "")
 	if err != nil {
 		log.Fatal(err)
 	}
